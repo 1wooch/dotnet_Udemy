@@ -2,8 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
+    <!-- show which frame work we use -->
+    <Nullable>disable</Nullable> <!-- disabled due to use nullable value-->
+    <ImplicitUsings>enable</ImplicitUsings>   <!-- reduce implicite  -> reduce to using statement-->
   </PropertyGroup>
 
   <ItemGroup>

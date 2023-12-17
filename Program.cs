@@ -1,6 +1,11 @@
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+/*
+Dependency Injection pattern
+if user wants put the service during the dev register on here
+
+*/
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -16,10 +21,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection(); //-> we are not going to use for local env this is mostly for actual product level to use HTTP
+
 
 app.UseAuthorization();
 
-app.MapControllers();
+app.MapControllers(); //-> when the controller hits, check the endpoint and run the controller.
 
 app.Run();
