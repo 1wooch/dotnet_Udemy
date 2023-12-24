@@ -30,11 +30,4 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-//app.UseHttpsRedirection(); //-> we are not going to use for local env this is mostly for actual product level to use HTTP
-
-
-app.UseAuthorization();
-
-app.MapControllers(); //-> when the controller hits, check the endpoint and run the controller.
-
-app.Run();
+//app.UseHttpsRedirection(); //-> we are not going to use for l
